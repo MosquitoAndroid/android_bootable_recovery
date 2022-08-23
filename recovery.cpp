@@ -813,7 +813,7 @@ Device::BuiltinAction start_recovery(Device* device, const std::vector<std::stri
   std::string ver = android::base::GetProperty("ro.mod.version", "");
 
   std::vector<std::string> title_lines = {
-    "Version " + android::base::GetProperty("ro.stag.display.version", "(unknown)"),
+    "Version " + android::base::GetProperty("ro.mosquito.display.version", "(unknown)"),
   };
   if (android::base::GetBoolProperty("ro.build.ab_update", false)) {
     std::string slot = android::base::GetProperty("ro.boot.slot_suffix", "");
